@@ -1,0 +1,26 @@
+<table>
+  <thead>
+  <tr>
+    <th>From</th>
+    <th>To</th>
+    <th>Status</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let sms of smsList">
+    <td>{{ sms.from }}</td>
+    <td>
+      <ul>
+        <li *ngFor="let recipient of sms.to">
+          {{ recipient.phone }} ({{ recipient.deliveryStatus }})
+        </li>
+      </ul>
+    </td>
+    <td>{{ getStatus(sms.to) }}</td>
+    <td>
+      <button (click)="viewDetails(sms.id)">View Details</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

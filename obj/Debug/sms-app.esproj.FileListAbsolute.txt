@@ -1,0 +1,2 @@
+C:\Users\Bogdan\source\repos\FDXTestApp\sms-app\obj\Debug\sms-app.esproj.SuggestedBindingRedirects.cache
+C:\Users\Bogdan\source\repos\FDXTestApp\sms-app\obj\Debug\sms-app.esproj.CoreCompileInputs.cache

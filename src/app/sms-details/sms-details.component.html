@@ -1,0 +1,12 @@
+<h2>SMS Details</h2>
+<div *ngIf="sms">
+  <p><strong>From:</strong> {{ sms.from }}</p>
+  <p><strong>To:</strong></p>
+  <ul>
+    <li *ngFor="let recipient of sms.to">
+      {{ recipient.phone }} ({{ recipient.deliveryStatus }})
+    </li>
+  </ul>
+  <p><strong>Status:</strong> {{ getStatus(sms.to) }}</p>
+  <p><strong>Content:</strong> {{ sms.content }}</p>
+</div>
